@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4A00B24F172314CE00904217 /* StringToNumberTransformer.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A00B24E172314CE00904217 /* StringToNumberTransformer.m */; };
 		4A123F1817224A7A008E47DC /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A123F1717224A7A008E47DC /* UIKit.framework */; };
 		4A123F1A17224A7A008E47DC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A123F1917224A7A008E47DC /* Foundation.framework */; };
 		4A123F1C17224A7A008E47DC /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A123F1B17224A7A008E47DC /* CoreGraphics.framework */; };
@@ -18,9 +19,17 @@
 		4A123F2E17224A7A008E47DC /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4A123F2D17224A7A008E47DC /* Default@2x.png */; };
 		4A123F3017224A7A008E47DC /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4A123F2F17224A7A008E47DC /* Default-568h@2x.png */; };
 		4A123F3317224A7A008E47DC /* pillbox.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 4A123F3117224A7A008E47DC /* pillbox.xcdatamodeld */; };
+		4A123F4017224C3C008E47DC /* PillCrudController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A123F3E17224C3C008E47DC /* PillCrudController.m */; };
+		4A123F4117224C3C008E47DC /* PillCrudController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4A123F3F17224C3C008E47DC /* PillCrudController.xib */; };
+		4A52F7B9172297C5009168B0 /* PillListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A52F7B8172297C5009168B0 /* PillListViewController.m */; };
+		4A52F7BD17229F5C009168B0 /* Pill.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A52F7BC17229F5C009168B0 /* Pill.m */; };
+		4AAEFABE17225B8600EDEE85 /* PillCrudCrontrollerModelDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AAEFABD17225B8600EDEE85 /* PillCrudCrontrollerModelDataSource.m */; };
+		CD3EAA0C11C648A786823E6B /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FA7C5CB5930D4ED2893AB983 /* libPods.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4A00B24D172314CE00904217 /* StringToNumberTransformer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StringToNumberTransformer.h; sourceTree = "<group>"; };
+		4A00B24E172314CE00904217 /* StringToNumberTransformer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StringToNumberTransformer.m; sourceTree = "<group>"; };
 		4A123F1417224A7A008E47DC /* pillbox.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = pillbox.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4A123F1717224A7A008E47DC /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		4A123F1917224A7A008E47DC /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -36,6 +45,17 @@
 		4A123F2D17224A7A008E47DC /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		4A123F2F17224A7A008E47DC /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		4A123F3217224A7A008E47DC /* pillbox.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = pillbox.xcdatamodel; sourceTree = "<group>"; };
+		4A123F3D17224C3C008E47DC /* PillCrudController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PillCrudController.h; sourceTree = "<group>"; };
+		4A123F3E17224C3C008E47DC /* PillCrudController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PillCrudController.m; sourceTree = "<group>"; };
+		4A123F3F17224C3C008E47DC /* PillCrudController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PillCrudController.xib; sourceTree = "<group>"; };
+		4A52F7B7172297C5009168B0 /* PillListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PillListViewController.h; sourceTree = "<group>"; };
+		4A52F7B8172297C5009168B0 /* PillListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PillListViewController.m; sourceTree = "<group>"; };
+		4A52F7BB17229F5C009168B0 /* Pill.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Pill.h; sourceTree = "<group>"; };
+		4A52F7BC17229F5C009168B0 /* Pill.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Pill.m; sourceTree = "<group>"; };
+		4AAEFABC17225B8600EDEE85 /* PillCrudCrontrollerModelDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PillCrudCrontrollerModelDataSource.h; sourceTree = "<group>"; };
+		4AAEFABD17225B8600EDEE85 /* PillCrudCrontrollerModelDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PillCrudCrontrollerModelDataSource.m; sourceTree = "<group>"; };
+		9BE3FDC6F64049E2B1098FC0 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = SOURCE_ROOT; };
+		FA7C5CB5930D4ED2893AB983 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,18 +67,29 @@
 				4A123F1A17224A7A008E47DC /* Foundation.framework in Frameworks */,
 				4A123F1C17224A7A008E47DC /* CoreGraphics.framework in Frameworks */,
 				4A123F1E17224A7A008E47DC /* CoreData.framework in Frameworks */,
+				CD3EAA0C11C648A786823E6B /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4A00B24C172314B000904217 /* IBAFormsUtils */ = {
+			isa = PBXGroup;
+			children = (
+				4A00B24D172314CE00904217 /* StringToNumberTransformer.h */,
+				4A00B24E172314CE00904217 /* StringToNumberTransformer.m */,
+			);
+			name = IBAFormsUtils;
+			sourceTree = "<group>";
+		};
 		4A123F0B17224A7A008E47DC = {
 			isa = PBXGroup;
 			children = (
 				4A123F1F17224A7A008E47DC /* pillbox */,
 				4A123F1617224A7A008E47DC /* Frameworks */,
 				4A123F1517224A7A008E47DC /* Products */,
+				9BE3FDC6F64049E2B1098FC0 /* Pods.xcconfig */,
 			);
 			sourceTree = "<group>";
 		};
@@ -77,6 +108,7 @@
 				4A123F1917224A7A008E47DC /* Foundation.framework */,
 				4A123F1B17224A7A008E47DC /* CoreGraphics.framework */,
 				4A123F1D17224A7A008E47DC /* CoreData.framework */,
+				FA7C5CB5930D4ED2893AB983 /* libPods.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -84,6 +116,8 @@
 		4A123F1F17224A7A008E47DC /* pillbox */ = {
 			isa = PBXGroup;
 			children = (
+				4A123F3A17224B66008E47DC /* Resources */,
+				4A123F3917224B5B008E47DC /* Classes */,
 				4A123F2817224A7A008E47DC /* AppDelegate.h */,
 				4A123F2917224A7A008E47DC /* AppDelegate.m */,
 				4A123F3117224A7A008E47DC /* pillbox.xcdatamodeld */,
@@ -106,6 +140,38 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		4A123F3917224B5B008E47DC /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				4A00B24C172314B000904217 /* IBAFormsUtils */,
+				4A52F7BA17229F03009168B0 /* Model */,
+				4A123F3D17224C3C008E47DC /* PillCrudController.h */,
+				4A123F3E17224C3C008E47DC /* PillCrudController.m */,
+				4AAEFABC17225B8600EDEE85 /* PillCrudCrontrollerModelDataSource.h */,
+				4AAEFABD17225B8600EDEE85 /* PillCrudCrontrollerModelDataSource.m */,
+				4A52F7B7172297C5009168B0 /* PillListViewController.h */,
+				4A52F7B8172297C5009168B0 /* PillListViewController.m */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		4A123F3A17224B66008E47DC /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				4A123F3F17224C3C008E47DC /* PillCrudController.xib */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		4A52F7BA17229F03009168B0 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				4A52F7BB17229F5C009168B0 /* Pill.h */,
+				4A52F7BC17229F5C009168B0 /* Pill.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -113,9 +179,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4A123F3617224A7A008E47DC /* Build configuration list for PBXNativeTarget "pillbox" */;
 			buildPhases = (
+				728497A49CAC464B949110C3 /* Check Pods Manifest.lock */,
 				4A123F1017224A7A008E47DC /* Sources */,
 				4A123F1117224A7A008E47DC /* Frameworks */,
 				4A123F1217224A7A008E47DC /* Resources */,
+				972B7ADCFAE74497A4FCA059 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -161,10 +229,42 @@
 				4A123F2C17224A7A008E47DC /* Default.png in Resources */,
 				4A123F2E17224A7A008E47DC /* Default@2x.png in Resources */,
 				4A123F3017224A7A008E47DC /* Default-568h@2x.png in Resources */,
+				4A123F4117224C3C008E47DC /* PillCrudController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		728497A49CAC464B949110C3 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sanbox is not in sync with the Podfile.lock. Run 'pod install'.\nEOM\n    exit 1\nfi\n";
+		};
+		972B7ADCFAE74497A4FCA059 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		4A123F1017224A7A008E47DC /* Sources */ = {
@@ -174,6 +274,11 @@
 				4A123F2617224A7A008E47DC /* main.m in Sources */,
 				4A123F2A17224A7A008E47DC /* AppDelegate.m in Sources */,
 				4A123F3317224A7A008E47DC /* pillbox.xcdatamodeld in Sources */,
+				4A123F4017224C3C008E47DC /* PillCrudController.m in Sources */,
+				4AAEFABE17225B8600EDEE85 /* PillCrudCrontrollerModelDataSource.m in Sources */,
+				4A52F7B9172297C5009168B0 /* PillListViewController.m in Sources */,
+				4A52F7BD17229F5C009168B0 /* Pill.m in Sources */,
+				4A00B24F172314CE00904217 /* StringToNumberTransformer.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -251,10 +356,12 @@
 		};
 		4A123F3717224A7A008E47DC /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9BE3FDC6F64049E2B1098FC0 /* Pods.xcconfig */;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "pillbox/pillbox-Prefix.pch";
 				INFOPLIST_FILE = "pillbox/pillbox-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -262,10 +369,12 @@
 		};
 		4A123F3817224A7A008E47DC /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9BE3FDC6F64049E2B1098FC0 /* Pods.xcconfig */;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "pillbox/pillbox-Prefix.pch";
 				INFOPLIST_FILE = "pillbox/pillbox-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -290,6 +399,7 @@
 				4A123F3817224A7A008E47DC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
