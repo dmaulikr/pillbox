@@ -41,6 +41,8 @@
     [_addButton setTitle:@"Add" forState:UIControlStateNormal];
     addButton = [[UIBarButtonItem alloc] initWithCustomView:_addButton];
     self.navigationItem.rightBarButtonItems = @[addButton, self.editButtonItem];
+    
+    [[[GAI sharedInstance] defaultTracker] sendView: @"Pill list"];
 }
 
 -(void) viewDidAppear:(BOOL)animated

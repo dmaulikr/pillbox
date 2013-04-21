@@ -8,8 +8,9 @@
 
 #import <UIKit/UIKit.h>
 #import <UIGlossyButton.h>
+#import <GAI.h>
 
-@interface NextPillViewController : UIViewController
+@interface NextPillViewController : GAITrackedViewController
 @property (weak, nonatomic) IBOutlet UILabel *infoLabel;
 @property (weak, nonatomic) IBOutlet UIGlossyButton *actionButton;
 - (IBAction)onAction:(id)sender;

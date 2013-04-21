@@ -33,6 +33,8 @@
 {
     self.navigationController.navigationBarHidden = YES;
     [self.actionButton setActionSheetButtonWithColor: [UIColor blackColor]];
+    self.trackedViewName = @"Next pill";
+
     [super viewDidLoad];
 }
 

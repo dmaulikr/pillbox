@@ -9,6 +9,7 @@
 #import "PillCrudController.h"
 #import "PillCrudCrontrollerModelDataSource.h"
 #import "AppDelegate.h"
+#import <GAI.h>
 
 @interface PillCrudController ()
 {
@@ -48,6 +49,7 @@
     PillCrudCrontrollerModelDataSource *model = [[PillCrudCrontrollerModelDataSource alloc] initWithModel: pill];
     self.formDataSource = model;
     
+    [[[GAI sharedInstance] defaultTracker] sendView: @"Pill crud"];
     [super viewDidLoad];
 }
 

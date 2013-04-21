@@ -10,6 +10,7 @@
 #import "PillCrudController.h"
 #import "PillListViewController.h"
 #import "NextPillViewController.h"
+#import <GAI.h>
 
 @implementation AppDelegate
 
@@ -29,6 +30,17 @@
     self.window.backgroundColor = [UIColor whiteColor];
     self.window.rootViewController = nav;
     [self.window makeKeyAndVisible];
+    
+    [GAI sharedInstance].trackUncaughtExceptions = YES;
+    [GAI sharedInstance].dispatchInterval = 20;
+    [GAI sharedInstance].debug = NO;
+    id<GAITracker> tracker = [[GAI sharedInstance] trackerWithTrackingId:@"UA-40317091-1"];
+    
+    if([launchOptions count]>0)
+        [tracker sendEventWithCategory:@"reminder"
+                        withAction:@"show"
+                         withLabel:@""
+                         withValue:[NSNumber numberWithInt:100]];
     return YES;
 }
 
