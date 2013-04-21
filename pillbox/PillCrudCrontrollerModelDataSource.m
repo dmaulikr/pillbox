@@ -18,24 +18,34 @@
 {
     self = [super initWithModel:model];
     
-    IBAFormSection *section = [self addSectionWithHeaderTitle:@"Pill Information" footerTitle:@""];
+    IBAFormSection *section = [self addSectionWithHeaderTitle: NSLocalizedString(@"Pill Information",@"") footerTitle:@""];
     
-    IBAFormField *formName = [[IBATextFormField alloc] initWithKeyPath:@"name" title:@"Name"];
+    
+    IBAFormField *formName = [[IBATextFormField alloc] initWithKeyPath:@"name" title:NSLocalizedString(@"Name",@"")];
     [section addFormField: formName];
     
-    NSArray *options =[IBAPickListFormOption pickListOptionsForStrings: @[@"Hour", @"Day", @"Week"]];
+    NSArray *options =[IBAPickListFormOption pickListOptionsForStrings: @[
+                         NSLocalizedString(@"Hour",@"")
+                       , NSLocalizedString(@"Day",@"")
+                       , NSLocalizedString(@"Week", @"")]];
     IBASingleIndexTransformer *trans = [[IBASingleIndexTransformer alloc] initWithPickListOptions:options];
 
-    IBAPickListFormField *list = [[IBAPickListFormField alloc] initWithKeyPath:@"freq_type" title:@"Frequency" valueTransformer: trans];
+    IBAPickListFormField *list = [[IBAPickListFormField alloc] initWithKeyPath:@"freq_type"
+                                                                         title:NSLocalizedString(@"Frequency",@"")
+                                                              valueTransformer: trans];
     list.pickListOptions = options;
     [list setSelectionMode: IBAPickListSelectionModeSingle];
     [section addFormField: list];
     
-    IBATextFormField *freq = [[IBATextFormField alloc] initWithKeyPath:@"freq_value" title:@"Each" valueTransformer: [StringToNumberTransformer instance] ];
+    IBATextFormField *freq = [[IBATextFormField alloc] initWithKeyPath:@"freq_value"
+                                                                 title:NSLocalizedString(@"Each", @"")
+                                                      valueTransformer: [StringToNumberTransformer instance] ];
     [section addFormField: freq];
     freq.textFormFieldCell.textField.keyboardType = UIKeyboardTypeNumberPad;
     
-    IBAFormField *date = [[IBADateFormField alloc] initWithKeyPath:@"next_time" title:@"Next time" defaultValue:[NSDate date] type:IBADateFormFieldTypeDateTime];
+    IBAFormField *date = [[IBADateFormField alloc] initWithKeyPath:@"next_time"
+                                                             title:NSLocalizedString(@"Next time",@"")
+                                                      defaultValue:[NSDate date] type:IBADateFormFieldTypeDateTime];
     [section addFormField:date];
     
     

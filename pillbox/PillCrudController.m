@@ -78,10 +78,35 @@
 
 -(void) addItem: (id) sender
 {
-    inserted = YES;
-    NSLog(@"%@!", [pill description]);
-    [[self app] saveContext];
-    [self.navigationController popToRootViewControllerAnimated:YES];
+    if([self validate])
+    {
+        inserted = YES;
+        NSLog(@"%@!", [pill description]);
+        [[self app] saveContext];
+        [self.navigationController popToRootViewControllerAnimated:YES];
+    }else
+    {
+        UIAlertView *alert = [[UIAlertView alloc]
+                              initWithTitle:NSLocalizedString(@"Pill configuration", @"")
+                              message:NSLocalizedString(@"Fields are not correctly filled, please fill them all",@"")
+                              delegate:self
+                              cancelButtonTitle: NSLocalizedString(@"Ok", @"")
+                              otherButtonTitles: nil];
+        [alert show];
+    }
+}
+
+-(bool) validate
+{
+    if(pill.name == nil || [pill.name isEqual: @""] )
+        return NO;
+    if(pill.freq_value <= 0)
+        return NO;
+    if([pill.freq_type intValue] == 8 && [pill.freq_value intValue]> 23)
+        return NO;
+    if(pill.next_time == nil)
+        return NO;
+    return YES;
 }
 
 -(AppDelegate*) app

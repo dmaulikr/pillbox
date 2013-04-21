@@ -63,10 +63,14 @@
     
     if([pills count] == 0)
     {
-        [self.actionButton setTitle:@"Create pill schedule" forState:UIControlStateNormal];
-        self.infoLabel.text = @"No pill scheduled, create one!";
+        [self.actionButton
+            setTitle:NSLocalizedString(@"Create pill schedule",@"")
+            forState:UIControlStateNormal];
+        self.infoLabel.text = NSLocalizedString(@"No pill scheduled, create one!", @"");
     }else{
-        [self.actionButton setTitle:@"Configure pill schedule" forState:UIControlStateNormal];
+        [self.actionButton
+            setTitle:NSLocalizedString(@"Configure pill schedule", @"")
+            forState:UIControlStateNormal];
         Pill* next_pill = [Pill firstTimeRemaining: pills ];
         self.infoLabel.text = [self nextPillText:next_pill];
     }
@@ -74,6 +78,8 @@
     for (Pill  *pill in pills) {
         [pill timeRemaining ];
     }
+    
+    [app createLocalNotifications: pills];
 }
 
 -(NSString*) nextPillText: (Pill*) pill
@@ -87,8 +93,8 @@
     NSCalendar *calendar = [NSCalendar currentCalendar];
     NSDateComponents *components = [calendar components:(NSHourCalendarUnit ) fromDate:date];
 
-    
-    return [NSString stringWithFormat: @"Next pill is %@ %@ at %i" , pill.name , dateString, [components hour] ] ;
+    NSString *format = NSLocalizedString(@"Next pill is %@ %@ at %i", @"");
+    return [NSString stringWithFormat: format, pill.name , dateString, [components hour] ] ;
 }
 
 - (IBAction)onAction:(id)sender {

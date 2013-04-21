@@ -18,5 +18,6 @@
 @property (nonatomic, retain) NSDate * next_time;
 
 -(NSDate*) timeRemaining;
+-(NSArray*) timeRemaining: (NSDate*) base nValues:(int)nValues;
 +(Pill*) firstTimeRemaining: (NSArray*) pills;
 @end

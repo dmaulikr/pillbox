@@ -120,6 +120,7 @@
                                    entityForName:@"Pill" inManagedObjectContext:context];
     [fetchRequest setEntity:entity];
     pills= [context executeFetchRequest:fetchRequest error:&error];
+    [app createLocalNotifications: pills];
     
     [self.tableView reloadData];
 }

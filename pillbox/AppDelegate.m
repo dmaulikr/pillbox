@@ -46,6 +46,34 @@
 
 - (void)applicationDidBecomeActive:(UIApplication *)application
 {
+    NSError *error;
+    AppDelegate *app = [UIApplication sharedApplication].delegate;
+    NSManagedObjectContext *context = [app managedObjectContext];
+    
+    NSFetchRequest *fetchRequest = [[NSFetchRequest alloc] init];
+    NSEntityDescription *entity = [NSEntityDescription
+                                   entityForName:@"Pill" inManagedObjectContext:context];
+    [fetchRequest setEntity:entity];
+    NSArray *pills = [context executeFetchRequest:fetchRequest error:&error];
+    [self createLocalNotifications: pills];
+}
+
+-(void) createLocalNotifications:(NSArray*) pills
+{
+    [[UIApplication sharedApplication] cancelAllLocalNotifications];
+    
+    for (Pill *pill in pills) {
+        for (NSDate *date in [pill timeRemaining:pill.next_time nValues:3]) {
+            UILocalNotification *notif = [[UILocalNotification alloc] init];
+            notif.fireDate = date;
+            NSString *format = NSLocalizedString(@"Time to take %@", @"");
+            notif.alertBody = [NSString stringWithFormat: format , pill.name];
+            NSDictionary *info = @{@"name": pill.name};
+            notif.userInfo = info;
+            notif.soundName = UILocalNotificationDefaultSoundName;
+            [[UIApplication sharedApplication] scheduleLocalNotification: notif];
+        }
+    }
 }
 
 - (void)applicationWillTerminate:(UIApplication *)application

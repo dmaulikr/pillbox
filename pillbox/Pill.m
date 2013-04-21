@@ -75,7 +75,6 @@
             NSDate *bb = [b timeRemaining];
             return [aa compare:bb] == NSOrderedAscending? a: b;
     });
-    
 }
 
 @end
