@@ -18,14 +18,11 @@
 		4A123F2617224A7A008E47DC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A123F2517224A7A008E47DC /* main.m */; };
 		4A123F2A17224A7A008E47DC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A123F2917224A7A008E47DC /* AppDelegate.m */; };
 		4A123F2C17224A7A008E47DC /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 4A123F2B17224A7A008E47DC /* Default.png */; };
-		4A123F2E17224A7A008E47DC /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4A123F2D17224A7A008E47DC /* Default@2x.png */; };
 		4A123F3017224A7A008E47DC /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4A123F2F17224A7A008E47DC /* Default-568h@2x.png */; };
 		4A123F3317224A7A008E47DC /* pillbox.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 4A123F3117224A7A008E47DC /* pillbox.xcdatamodeld */; };
 		4A123F4017224C3C008E47DC /* PillCrudController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A123F3E17224C3C008E47DC /* PillCrudController.m */; };
 		4A123F4117224C3C008E47DC /* PillCrudController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4A123F3F17224C3C008E47DC /* PillCrudController.xib */; };
-		4A3ECE4E1723B6A5005806F0 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4A3ECE4D1723B6A5005806F0 /* Default-568h@2x.png */; };
 		4A3ECE501723B6A8005806F0 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4A3ECE4F1723B6A8005806F0 /* Default@2x.png */; };
-		4A3ECE521723B6AA005806F0 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 4A3ECE511723B6AA005806F0 /* Default.png */; };
 		4A3ECE541723BA6D005806F0 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 4A3ECE531723BA6D005806F0 /* Icon.png */; };
 		4A3ECE561723BA70005806F0 /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4A3ECE551723BA70005806F0 /* Icon@2x.png */; };
 		4A3ECE5A1723BB31005806F0 /* backgroud.png in Resources */ = {isa = PBXBuildFile; fileRef = 4A3ECE591723BB31005806F0 /* backgroud.png */; };
@@ -310,13 +307,10 @@
 			files = (
 				4A123F2417224A7A008E47DC /* InfoPlist.strings in Resources */,
 				4A123F2C17224A7A008E47DC /* Default.png in Resources */,
-				4A123F2E17224A7A008E47DC /* Default@2x.png in Resources */,
 				4A123F3017224A7A008E47DC /* Default-568h@2x.png in Resources */,
 				4A123F4117224C3C008E47DC /* PillCrudController.xib in Resources */,
 				4A00B2561723272B00904217 /* NextPillViewController.xib in Resources */,
-				4A3ECE4E1723B6A5005806F0 /* Default-568h@2x.png in Resources */,
 				4A3ECE501723B6A8005806F0 /* Default@2x.png in Resources */,
-				4A3ECE521723B6AA005806F0 /* Default.png in Resources */,
 				4A3ECE541723BA6D005806F0 /* Icon.png in Resources */,
 				4A3ECE561723BA70005806F0 /* Icon@2x.png in Resources */,
 				4A3ECE5A1723BB31005806F0 /* backgroud.png in Resources */,
@@ -462,7 +456,8 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Jordi Coscoll (L9URRGL5X9)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Jordi Coscoll (L9URRGL5X9)";
 				COPY_PHASE_STRIP = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
@@ -470,6 +465,8 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				PROVISIONING_PROFILE = "080BEF85-9419-451E-9EE2-5018B577C1DA";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
@@ -485,6 +482,7 @@
 				INFOPLIST_FILE = "pillbox/pillbox-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -498,6 +496,7 @@
 				INFOPLIST_FILE = "pillbox/pillbox-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
