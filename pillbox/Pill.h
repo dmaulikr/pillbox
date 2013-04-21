@@ -17,4 +17,6 @@
 @property (nonatomic, retain) NSString * name;
 @property (nonatomic, retain) NSDate * next_time;
 
+-(NSDate*) timeRemaining;
++(Pill*) firstTimeRemaining: (NSArray*) pills;
 @end

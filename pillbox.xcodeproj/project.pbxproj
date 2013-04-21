@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		4A00B24F172314CE00904217 /* StringToNumberTransformer.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A00B24E172314CE00904217 /* StringToNumberTransformer.m */; };
+		4A00B2551723272B00904217 /* NextPillViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A00B2531723272B00904217 /* NextPillViewController.m */; };
+		4A00B2561723272B00904217 /* NextPillViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4A00B2541723272B00904217 /* NextPillViewController.xib */; };
 		4A123F1817224A7A008E47DC /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A123F1717224A7A008E47DC /* UIKit.framework */; };
 		4A123F1A17224A7A008E47DC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A123F1917224A7A008E47DC /* Foundation.framework */; };
 		4A123F1C17224A7A008E47DC /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A123F1B17224A7A008E47DC /* CoreGraphics.framework */; };
@@ -21,6 +23,12 @@
 		4A123F3317224A7A008E47DC /* pillbox.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 4A123F3117224A7A008E47DC /* pillbox.xcdatamodeld */; };
 		4A123F4017224C3C008E47DC /* PillCrudController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A123F3E17224C3C008E47DC /* PillCrudController.m */; };
 		4A123F4117224C3C008E47DC /* PillCrudController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4A123F3F17224C3C008E47DC /* PillCrudController.xib */; };
+		4A3ECE4E1723B6A5005806F0 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4A3ECE4D1723B6A5005806F0 /* Default-568h@2x.png */; };
+		4A3ECE501723B6A8005806F0 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4A3ECE4F1723B6A8005806F0 /* Default@2x.png */; };
+		4A3ECE521723B6AA005806F0 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 4A3ECE511723B6AA005806F0 /* Default.png */; };
+		4A3ECE541723BA6D005806F0 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 4A3ECE531723BA6D005806F0 /* Icon.png */; };
+		4A3ECE561723BA70005806F0 /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4A3ECE551723BA70005806F0 /* Icon@2x.png */; };
+		4A3ECE5A1723BB31005806F0 /* backgroud.png in Resources */ = {isa = PBXBuildFile; fileRef = 4A3ECE591723BB31005806F0 /* backgroud.png */; };
 		4A52F7B9172297C5009168B0 /* PillListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A52F7B8172297C5009168B0 /* PillListViewController.m */; };
 		4A52F7BD17229F5C009168B0 /* Pill.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A52F7BC17229F5C009168B0 /* Pill.m */; };
 		4AAEFABE17225B8600EDEE85 /* PillCrudCrontrollerModelDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AAEFABD17225B8600EDEE85 /* PillCrudCrontrollerModelDataSource.m */; };
@@ -30,6 +38,9 @@
 /* Begin PBXFileReference section */
 		4A00B24D172314CE00904217 /* StringToNumberTransformer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StringToNumberTransformer.h; sourceTree = "<group>"; };
 		4A00B24E172314CE00904217 /* StringToNumberTransformer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StringToNumberTransformer.m; sourceTree = "<group>"; };
+		4A00B2521723272B00904217 /* NextPillViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NextPillViewController.h; sourceTree = "<group>"; };
+		4A00B2531723272B00904217 /* NextPillViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NextPillViewController.m; sourceTree = "<group>"; };
+		4A00B2541723272B00904217 /* NextPillViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NextPillViewController.xib; sourceTree = "<group>"; };
 		4A123F1417224A7A008E47DC /* pillbox.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = pillbox.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4A123F1717224A7A008E47DC /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		4A123F1917224A7A008E47DC /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -48,6 +59,12 @@
 		4A123F3D17224C3C008E47DC /* PillCrudController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PillCrudController.h; sourceTree = "<group>"; };
 		4A123F3E17224C3C008E47DC /* PillCrudController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PillCrudController.m; sourceTree = "<group>"; };
 		4A123F3F17224C3C008E47DC /* PillCrudController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PillCrudController.xib; sourceTree = "<group>"; };
+		4A3ECE4D1723B6A5005806F0 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		4A3ECE4F1723B6A8005806F0 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		4A3ECE511723B6AA005806F0 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		4A3ECE531723BA6D005806F0 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
+		4A3ECE551723BA70005806F0 /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon@2x.png"; sourceTree = "<group>"; };
+		4A3ECE591723BB31005806F0 /* backgroud.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = backgroud.png; sourceTree = "<group>"; };
 		4A52F7B7172297C5009168B0 /* PillListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PillListViewController.h; sourceTree = "<group>"; };
 		4A52F7B8172297C5009168B0 /* PillListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PillListViewController.m; sourceTree = "<group>"; };
 		4A52F7BB17229F5C009168B0 /* Pill.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Pill.h; sourceTree = "<group>"; };
@@ -83,10 +100,37 @@
 			name = IBAFormsUtils;
 			sourceTree = "<group>";
 		};
+		4A00B2501723253000904217 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				4A123F3D17224C3C008E47DC /* PillCrudController.h */,
+				4A123F3E17224C3C008E47DC /* PillCrudController.m */,
+				4A52F7B7172297C5009168B0 /* PillListViewController.h */,
+				4A52F7B8172297C5009168B0 /* PillListViewController.m */,
+				4A00B2521723272B00904217 /* NextPillViewController.h */,
+				4A00B2531723272B00904217 /* NextPillViewController.m */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		4A00B2511723254000904217 /* Forms */ = {
+			isa = PBXGroup;
+			children = (
+				4AAEFABC17225B8600EDEE85 /* PillCrudCrontrollerModelDataSource.h */,
+				4AAEFABD17225B8600EDEE85 /* PillCrudCrontrollerModelDataSource.m */,
+			);
+			name = Forms;
+			sourceTree = "<group>";
+		};
 		4A123F0B17224A7A008E47DC = {
 			isa = PBXGroup;
 			children = (
-				4A123F1F17224A7A008E47DC /* pillbox */,
+				4A3ECE551723BA70005806F0 /* Icon@2x.png */,
+				4A3ECE531723BA6D005806F0 /* Icon.png */,
+				4A3ECE511723B6AA005806F0 /* Default.png */,
+				4A3ECE4F1723B6A8005806F0 /* Default@2x.png */,
+				4A3ECE4D1723B6A5005806F0 /* Default-568h@2x.png */,
+				4A123F1F17224A7A008E47DC /* PillBox */,
 				4A123F1617224A7A008E47DC /* Frameworks */,
 				4A123F1517224A7A008E47DC /* Products */,
 				9BE3FDC6F64049E2B1098FC0 /* Pods.xcconfig */,
@@ -113,7 +157,7 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		4A123F1F17224A7A008E47DC /* pillbox */ = {
+		4A123F1F17224A7A008E47DC /* PillBox */ = {
 			isa = PBXGroup;
 			children = (
 				4A123F3A17224B66008E47DC /* Resources */,
@@ -123,6 +167,7 @@
 				4A123F3117224A7A008E47DC /* pillbox.xcdatamodeld */,
 				4A123F2017224A7A008E47DC /* Supporting Files */,
 			);
+			name = PillBox;
 			path = pillbox;
 			sourceTree = "<group>";
 		};
@@ -143,14 +188,10 @@
 		4A123F3917224B5B008E47DC /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				4A00B2511723254000904217 /* Forms */,
+				4A00B2501723253000904217 /* Controllers */,
 				4A00B24C172314B000904217 /* IBAFormsUtils */,
 				4A52F7BA17229F03009168B0 /* Model */,
-				4A123F3D17224C3C008E47DC /* PillCrudController.h */,
-				4A123F3E17224C3C008E47DC /* PillCrudController.m */,
-				4AAEFABC17225B8600EDEE85 /* PillCrudCrontrollerModelDataSource.h */,
-				4AAEFABD17225B8600EDEE85 /* PillCrudCrontrollerModelDataSource.m */,
-				4A52F7B7172297C5009168B0 /* PillListViewController.h */,
-				4A52F7B8172297C5009168B0 /* PillListViewController.m */,
 			);
 			name = Classes;
 			sourceTree = "<group>";
@@ -159,6 +200,8 @@
 			isa = PBXGroup;
 			children = (
 				4A123F3F17224C3C008E47DC /* PillCrudController.xib */,
+				4A00B2541723272B00904217 /* NextPillViewController.xib */,
+				4A3ECE591723BB31005806F0 /* backgroud.png */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -230,6 +273,13 @@
 				4A123F2E17224A7A008E47DC /* Default@2x.png in Resources */,
 				4A123F3017224A7A008E47DC /* Default-568h@2x.png in Resources */,
 				4A123F4117224C3C008E47DC /* PillCrudController.xib in Resources */,
+				4A00B2561723272B00904217 /* NextPillViewController.xib in Resources */,
+				4A3ECE4E1723B6A5005806F0 /* Default-568h@2x.png in Resources */,
+				4A3ECE501723B6A8005806F0 /* Default@2x.png in Resources */,
+				4A3ECE521723B6AA005806F0 /* Default.png in Resources */,
+				4A3ECE541723BA6D005806F0 /* Icon.png in Resources */,
+				4A3ECE561723BA70005806F0 /* Icon@2x.png in Resources */,
+				4A3ECE5A1723BB31005806F0 /* backgroud.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -279,6 +329,7 @@
 				4A52F7B9172297C5009168B0 /* PillListViewController.m in Sources */,
 				4A52F7BD17229F5C009168B0 /* Pill.m in Sources */,
 				4A00B24F172314CE00904217 /* StringToNumberTransformer.m in Sources */,
+				4A00B2551723272B00904217 /* NextPillViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -321,7 +372,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -346,7 +397,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";

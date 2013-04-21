@@ -9,6 +9,7 @@
 #import "AppDelegate.h"
 #import "PillCrudController.h"
 #import "PillListViewController.h"
+#import "NextPillViewController.h"
 
 @implementation AppDelegate
 
@@ -19,7 +20,8 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     //PillCrudController *rootViewController = [[PillCrudController alloc] initWithNibName:@"PillCrudController" bundle:nil];
-    PillListViewController *rootViewController = [[PillListViewController alloc] initWithStyle:UITableViewStylePlain];
+    //PillListViewController *rootViewController = [[PillListViewController alloc] initWithStyle:UITableViewStylePlain];
+    NextPillViewController *rootViewController = [[NextPillViewController alloc] initWithNibName: @"NextPillViewController" bundle:nil];
     UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController: rootViewController];
     
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];

@@ -10,6 +10,7 @@
 #import "PillCrudController.h"
 #import "AppDelegate.h"
 #import "Pill.h"
+#import <UIGlossyButton.h>
 
 @interface PillListViewController ()
 {
@@ -33,12 +34,18 @@
 {
     [super viewDidLoad];
     self.title = @"Your Pills";
-    addButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:self action:@selector(addItem:)];
+    UIGlossyButton *_addButton = [[UIGlossyButton alloc] initWithFrame:CGRectMake(0, 0, 48, 28)];
+    [_addButton addTarget:self action:@selector(addItem:) forControlEvents:UIControlEventTouchUpInside];
+    
+    [_addButton setNavigationButtonWithColor:[UIColor navigationBarButtonColor]];
+    [_addButton setTitle:@"Add" forState:UIControlStateNormal];
+    addButton = [[UIBarButtonItem alloc] initWithCustomView:_addButton];
     self.navigationItem.rightBarButtonItems = @[addButton, self.editButtonItem];
 }
 
 -(void) viewDidAppear:(BOOL)animated
 {
+    self.navigationController.navigationBarHidden = NO;
     [self loadData];
 }
 

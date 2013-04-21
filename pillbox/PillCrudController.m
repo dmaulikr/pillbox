@@ -66,6 +66,11 @@
     }
 }
 
+-(void) viewDidAppear:(BOOL)animated
+{
+    self.navigationController.navigationBarHidden = NO;
+}
+
 - (void)viewDidUnload {
     [self setTable:nil];
     [super viewDidUnload];
