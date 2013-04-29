@@ -73,18 +73,35 @@
 -(void) createLocalNotifications:(NSArray*) pills
 {
     [[UIApplication sharedApplication] cancelAllLocalNotifications];
+    NSMutableArray *pillsDates = [[NSMutableArray alloc] init];
     
     for (Pill *pill in pills) {
-        for (NSDate *date in [pill timeRemaining:pill.next_time nValues:3]) {
-            UILocalNotification *notif = [[UILocalNotification alloc] init];
-            notif.fireDate = date;
-            NSString *format = NSLocalizedString(@"Time to take %@", @"");
-            notif.alertBody = [NSString stringWithFormat: format , pill.name];
-            NSDictionary *info = @{@"name": pill.name};
-            notif.userInfo = info;
-            notif.soundName = UILocalNotificationDefaultSoundName;
-            [[UIApplication sharedApplication] scheduleLocalNotification: notif];
+        for (NSDate *date in [pill timeRemaining:pill.next_time nValues:64]) {
+            [pillsDates addObject: @{@"pill": pill, @"date": date}];
         }
+    }
+    
+    NSArray* pillsSorted = [pillsDates sortedArrayUsingComparator:^NSComparisonResult(id obj1, id obj2) {
+        NSDate *d1 = [obj1 objectForKey:@"date"];
+        NSDate *d2 = [obj1 objectForKey:@"date"];
+        
+        return [d1 compare: d2];
+    }];
+    
+    for(int i = 0 ; i<64; i++)
+    {
+        NSDictionary *info = [pillsSorted objectAtIndex: i];
+        Pill *pill = [info objectForKey: @"pill"];
+        NSDate *date = [info objectForKey: @"date"];
+        
+        UILocalNotification *notif = [[UILocalNotification alloc] init];
+        notif.fireDate = date;
+        NSString *format = NSLocalizedString(@"Time to take %@", @"");
+        notif.alertBody = [NSString stringWithFormat: format , pill.name];
+        NSDictionary *_info = @{@"name": pill.name};
+        notif.userInfo = _info;
+        notif.soundName = UILocalNotificationDefaultSoundName;
+        [[UIApplication sharedApplication] scheduleLocalNotification: notif];
     }
 }
 
